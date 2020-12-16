@@ -1,4 +1,4 @@
-RSPriceBot
+#RSPriceBot
 
 RSPriceBot, is a price gathering Discord bot created for RuneScape MMORPG game.
 
