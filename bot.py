@@ -7,7 +7,7 @@ import discord
 import datacrawler as ge_connection
 from discord.ext import commands
 
-TOKEN = 'NTM3NzIyODM1NjY2NDY4ODc2.Dy0DPQ.xxu-Ocsf_ZzaAOGHAynsUjQlFPY'
+TOKEN = ''
 GUILD = os.getenv('DISCORD_GUILD')
 
 
