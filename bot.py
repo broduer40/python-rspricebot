@@ -39,7 +39,7 @@ async def on_member_join(member):
 
 @bot.command(name='test',help="Testing the discord bot.")
 async def test(ctx): 
-    await ctx.send("ne testi lan?")
+    await ctx.send("Testing, 1,2,3?")
 
 @bot.command(name='roll', help='Rolling dice.')
 async def roll(ctx, number_of_dice: int, number_of_sides: int):
