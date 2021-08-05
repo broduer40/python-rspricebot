@@ -10,6 +10,10 @@ Made with Python, used BeautifulSoup4 for web-scraping, Discord.ext for Discord 
 # Commands
 
 !price <Item_name>       -> Checks the item price you have asked. Crawls RS API and Grand Exchange data.
+
 !test                    -> Responds with "Testing 1 2 3"
+
 !roll                    -> Rolls a dice.
+
 !createch <channel_name> -> Creates a channel with name, checks if you have godmode role.
+
