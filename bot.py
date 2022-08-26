@@ -1,4 +1,3 @@
-
 # bot.py
 import time
 import os
@@ -6,13 +5,21 @@ import random
 import discord
 import datacrawler as ge_connection
 from discord.ext import commands
+intents = discord.Intents(messages=True, guilds=True, members=True) 
+ # If you also want reaction events enable the following:
+intents.reactions = True
 
+ # Somewhere else:
+ # client = discord.Client(intents=intents)
+ # or
+ # from discord.ext import commands
+ # bot = commands.Bot(command_prefix='!', intents=intents)
 TOKEN = ''
 GUILD = os.getenv('DISCORD_GUILD')
 
+bot = commands.Bot (command_prefix='.', intents=intents)
+ 
 
-bot = commands.Bot(command_prefix='!')
-    
 @bot.event
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
