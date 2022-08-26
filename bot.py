@@ -5,6 +5,7 @@ import random
 import discord
 import datacrawler as ge_connection
 from discord.ext import commands
+my_secret = os.environ['token']
 intents = discord.Intents(messages=True, guilds=True, members=True) 
  # If you also want reaction events enable the following:
 intents.reactions = True
@@ -14,7 +15,7 @@ intents.reactions = True
  # or
  # from discord.ext import commands
  # bot = commands.Bot(command_prefix='!', intents=intents)
-TOKEN = ''
+TOKEN = os.environ['token']
 GUILD = os.getenv('DISCORD_GUILD')
 
 bot = commands.Bot (command_prefix='.', intents=intents)
